@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Apriliani</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdeedc; /* Cream background */
+            color: #492f29; /* Dark brown text */
+        }
+        header {
+            background-color: #b55976; /* Rose header background */
+            color: white;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 3em; /* Make the title larger */
+            font-weight: bold; /* Make the title bold */
+        }
+        nav {
+            margin: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #b55976; /* Rose links */
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #492f29; /* Dark brown on hover */
+        }
+        section {
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        h1, h2, h3 {
+            color: #b55976; /* Rose headings */
+            margin-bottom: 10px;
+        }
+        /* Projects Section */
+        .projects-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .project-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 45%;
+            margin-bottom: 20px;
+        }
+        .project-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover; /* Ensures image fits well */
+        }
+        .project-content {
+            padding: 20px;
+        }
+        .reflection {
+            background-color: #fbe8d3; /* Peach reflection background */
+            padding: 15px;
+            border-left: 5px solid #b55976; /* Rose reflection border */
+            margin-top: 15px;
+        }
+        .category {
+            margin-top: 10px;
+        }
+        .category span {
+            background-color: #b55976; /* Rose tag background */
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+            margin-right: 5px;
+        }
+        /* Experience Section */
+        .experience-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .experience-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 45%; /* Set width as needed */
+        }
+        .experience-card img {
+            width: 100%;
+            height: 200px; /* Set height as needed */
+            object-fit: cover; /* Ensures image fits well */
+        }
+        /* Contact Section */
+        .btn-contact {
+            display: inline-block;
+            background-color: #b55976; /* Rose button background */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .btn-contact:hover {
+            background-color: #492f29; /* Dark brown on hover */
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .social-links {
+            margin-top: 10px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: #b55976;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #492f29;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>APRILIANI</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Beranda</a>
+        <a href="#projects">Proyek</a>
+        <a href="#experience">Pengalaman</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+
+    <section id="home">
+        <h2>Pengantar</h2>
+        <p>Halo semuanya! Saya Apriliani, tapi kalian bisa panggil saya April. Saat ini, saya sedang menempuh studi di bidang rekayasa perangkat lunak dan sangat senang bisa menjadi bagian dari RPL. Ketika tidak sibuk dengan coding, saya suka menjelajahi tren desain terbaru dan mendalami dunia UI/UX. Saya percaya bahwa desain yang baik bisa membuat pengalaman pengguna jauh lebih menyenangkan. Saya ingin belajar lebih dalam tentang bidang ini dan berharap bisa berbagi ilmu serta belajar dari kalian semua. Senang bertemu dengan kalian!</p>
+    </section>
+
+    <section id="projects">
+        <h2>Proyek Saya</h2>
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="java1.png" alt="Aplikasi Pembayaran Cafe">
+                <div class="project-content">
+                    <h3>Aplikasi Pembayaran Cafe</h3>
+                    <p><strong>Deskripsi:</strong> Dengan pengurangan waktu tunggu dan kesalahan dalam pemesanan, pengguna(kasir) dapat menikmati pengalaman yang lebih baik saat melayani pengunjung.</p>
+                    <p><strong>Proses:</strong> Aplikasi dikembangkan menggunakan Java dan MySQL. Pengguna dapat melihat daftar produk, memilih meja makan, melakukan pembayaran, melihat pendapatan, dan mencetak struk pembayaran.</p>
+                    <div class="reflection">
+                        <h4>Refleksi</h4>
+                        <p>Mengembangkan aplikasi pembayaran cafe adalah pengalaman yang sangat berharga dan menantang. Selama proses pengembangan, saya belajar banyak tentang bagaimana teknologi dapat membantu meningkatkan efisiensi operasional di industri kuliner.</p>
+                    </div>
+                    <div class="category">
+                        <span>Java</span><span>MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="mmm.png" alt="Desain Website MentCome">
+                <div class="project-content">
+                    <h3>Desain Website MentCome</h3>
+                    <p><strong>Deskripsi:</strong> Aplikasi ini dirancang untuk membantu pengguna menemukan mentor yang sesuai dengan kebutuhan belajar mereka dan memfasilitasi pemesanan sesi belajar secara offline. Dengan adanya aplikasi ini, saya berharap dapat memberikan solusi praktis bagi mereka yang ingin meningkatkan keterampilan mereka dengan bimbingan langsung.</p>
+                    <p><strong>Proses:</strong> Melalui wawancara dan survei, saya mendapatkan wawasan yang berharga tentang apa yang dicari pengguna dalam aplikasi pemesanan mentor. Hal ini sangat membantu dalam merancang fitur dan antarmuka aplikasi.</p>
+                    <div class="reflection">
+                        <h4>Refleksi</h4>
+                        <p>Secara keseluruhan, pengalaman ini telah memperkaya keterampilan teknis saya dan memberikan saya wawasan tentang bagaimana teknologi dapat meningkatkan akses pendidikan. Saya bersemangat untuk menerapkan pelajaran yang saya pelajari dalam proyek-proyek mendatang dan terus berkontribusi pada dunia pendidikan.</p>
+                    </div>
+                    <div class="category">
+                        <span>Figma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Pengalaman Saya</h2>
+        <p>Saya memiliki pengalaman berharga dalam bidang akademik dan proyek pengembangan perangkat lunak, terutama dalam pengembangan aplikasi berbasis desktop dan manajemen basis data. Selama studi, saya terlibat dalam beberapa kegiatan organisasi dan kompetisi teknologi.</p>
+        <div class="experience-container">
+            <div class="experience-card">
+                <img src="s1.jpg" alt="Pengalaman 1">
+                <p>Intern Front end developer</p>
+            </div>
+            <div class="experience-card">
+                <img src="s2.jpg" alt="Pengalaman 2">
+                <p>IT Solusition for business</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak</h2>
+        <p>Saya senang berbagi pengalaman, berkolaborasi, membangun relasi, ayo berteman  <a href="mailto:apriliani@example.com">aprilshidqia@student.telkomuniversity.ac.id</a>.</p>
+        <a class="btn-contact" href="mailto:aprilshidqia@student.telkomuniversity.ac.id">Hubungi Saya</a>
+    </section>
+
+    <footer>
+        <p>© 2024 Portofolio Apriliani</p>
+        <div class="social-links">
+            <a href="https://github.com/apriliani" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/apriliani" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>
